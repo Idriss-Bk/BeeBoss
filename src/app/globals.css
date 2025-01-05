@@ -2,20 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+ 
+@layer base {
+    :root {
+      --font-fraunces: 'Fraunces', serif;
+    }
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+  .gradient-text {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  .gradient-border {
+    position: relative;
+    border: none;
+    padding: 0.5rem 1rem; 
+  }
+
+  .achievements-page {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+  }
+  
+  .achievement-card {
+    background-color: #f7fafc; /* Light gray background */
+    padding: 2rem; /* Padding inside the card */
+    border-radius: 0.75rem; /* Extra-large rounded corners */
+    /* Subtle shadow */
+     /* Center-align text */
+  }
+  
+  .achievement-card h2 {
+    font-size: 1.875rem; /* 3xl text size */
+    color: #1a202c; /* Dark gray text color */
+    margin-bottom: 1rem; /* Space below the heading */
+  }
+  
+  .achievement-card p {
+    color: #1b1b1b; /* Medium gray text color */
+  }
+  
