@@ -45,4 +45,12 @@
   .achievement-card p {
     color: #1b1b1b; /* Medium gray text color */
   }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.90); /* 75% opacity black background */
+    .hero-button {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+  }
+  
   

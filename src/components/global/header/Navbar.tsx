@@ -1,7 +1,6 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
-import { useEffect } from 'react';
 import Logo from './Logo';
 import RightBar from './RightBar';
 
@@ -11,7 +10,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="navbar fixed top-0 left-0 w-full py-4  z-50 ">
+    <nav className="navbar fixed top-0 left-0 w-full  z-50 bg-black bg-opacity-90">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
@@ -20,8 +19,6 @@ const Navbar: React.FC = () => {
           <RightBar />
         </div>
       </div>
-
-    
     </nav>
   );
 };
