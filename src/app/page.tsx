@@ -1,6 +1,7 @@
 import Achivements from '@/components/static/Achivements';
 import Hero from '../components/static/Hero';
 import Integration from '@/components/static/Integration';
+import About from '@/components/static/About';
 
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
    <Hero />
    <Achivements />
    <Integration />
+   <About />
    </>
   );
 }
